@@ -1,5 +1,4 @@
 from Gomoku import Gomoku
-from TicTacToe import TicTacToe
 from MCTS import MCTS
 from ResNet import ResNet
 
