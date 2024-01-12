@@ -2,8 +2,8 @@ import numpy as np
 
 class Gomoku:
     def __init__(self) :
-        self.row_count = 19
-        self.column_count = 15
+        self.row_count = 9
+        self.column_count = 9
         self.action_size = self.row_count * self.column_count
 
     def __repr__(self):
@@ -22,7 +22,7 @@ class Gomoku:
     
     def get_valid_moves(self, state):
         # return valid moves
-        return (state.reshape(-1) == 0).astype(np.uint16)
+        return (state.reshape(-1) == 0).astype(np.uint8)
     
     def check_winner(self, state, action):
         if action == None:
